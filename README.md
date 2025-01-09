@@ -43,3 +43,16 @@ const spindle = b.depencency("spindle", .{}).module("spindle");
 my_lib.addImport("spindle", spindle);
 ```
 
+## Prblems
+
+Today in Zig some runtime control flow does not well mesh with comptime. This is only a small experiment. 
+
+### More
+On runtime control flow:
+https://zsf.zulipchat.com/#narrow/channel/454360-compiler/topic/comptime.20control.20flow
+On why we cannot use comptime vars: 
+https://ziggit.dev/t/comptime-mutable-memory-changes/3702
+Inline fns:
+https://ziglang.org/documentation/master/#inline-fn
+
+
